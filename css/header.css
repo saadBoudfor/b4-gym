@@ -31,7 +31,7 @@ section.presentation div.description {
   background-color:  var(--main-color-transparent);
   color: white;
   padding: 21px;
-  max-width: 600px;
+  max-width: 450px;
   min-width: 300px;
   border-bottom: 5px solid var(--secondary-color);
   margin-top: 20%;
