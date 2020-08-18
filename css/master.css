@@ -1,0 +1,25 @@
+:root {
+  --main-color: #00BCD4;
+  --main-color-transparent: rgba(33, 150, 243, 0.5);
+  --secondary-color: #2196F3;
+  --background-global: whitesmoke;
+}
+
+body {
+  background-color: var(--background-global);
+}
+
+body, html, h1, h2, h3, h4, h5, h6, p  {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  padding: 0 20rem;
+}
+
+@media screen and (max-width: 640px) {
+  .container {
+    padding: 0;
+  }
+}

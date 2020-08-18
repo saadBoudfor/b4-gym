@@ -1,0 +1,134 @@
+
+header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+section.presentation {
+  background: url("../resources/banner11.jpg");
+  min-height: 800px;
+  position: relative;
+}
+
+div.navigation {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  cursor: pointer;
+}
+
+div.navigation i:hover {
+  font-size: 82px;
+}
+
+div.navigation i {
+  font-size: 72px;
+  color: white;
+}
+
+section.presentation div.description {
+  background-color:  var(--main-color-transparent);
+  color: white;
+  padding: 21px;
+  max-width: 600px;
+  min-width: 300px;
+  border-bottom: 5px solid var(--secondary-color);
+  margin-top: 20%;
+}
+
+section.presentation div.description h1 {
+    font-size: 42px;
+    font-weight: 400;
+}
+
+section.presentation div.description h2 {
+    font-size: 24px;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+section.presentation div.description p {
+  padding: 12px 0;
+  margin-top: 5px;
+  width: 80%;
+}
+
+section.presentation div.description button {
+  border: 1px solid white;
+  color: white;
+  border-radius: 5px;
+  box-shadow: none;
+  text-transform: uppercase;
+  padding: 12px 21px;
+  background: none;
+  cursor: pointer;
+}
+
+section.presentation div.description button:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+}
+
+section.contact {
+  height: 60px;
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+section.contact div.phone {
+  align-self: center;
+  color: white;
+  cursor: pointer;
+}
+
+section.contact div.media {
+  align-self: center;
+  color: white;
+  cursor: pointer;
+}
+
+section.contact div.media i {
+  margin-left: 10px;
+  font-weight: 300;
+}
+
+/* Nav menu */
+
+section.menu {
+  height: 100px;
+  background-color: var(--main-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+section.menu div.logo {
+  cursor: pointer;
+  position: relative;
+  bottom: 15px;
+}
+
+section.menu nav ul {
+  list-style: none;
+  display: flex;
+}
+
+section.menu nav ul li{
+  text-transform: uppercase;
+  margin-right: 10px;
+  color: white;
+  padding: 12px;
+  cursor: pointer;
+}
+
+
+section.menu nav ul li:hover,
+section.menu nav ul li.active {
+  background: white;
+  border-radius: 5px;
+  color: var(--main-color);
+}
