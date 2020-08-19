@@ -88,3 +88,101 @@ main section.streaming .card .card-body button {
 main section.streaming .card .card-body:hover button {
   display: block;
 }
+
+
+/* catalogue and pricing section */
+
+/* 1. catalogue */
+main section.catalogue-and-pricing {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+  margin-top: 30px;
+}
+
+main section.catalogue-and-pricing > * {
+  margin: 5px;
+}
+
+main section.catalogue-and-pricing h2 {
+  font-size: 28px;
+  color: var(--main-color);
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+main section.catalogue-and-pricing .catalogue {
+  flex: 2;
+}
+
+main section.catalogue-and-pricing .catalogue .catalogue-table{
+  background: var(--main-color);
+  padding: 12px;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+main section.catalogue-and-pricing
+.catalogue .catalogue-table .side .classe {
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
+  padding: 12px 0;
+}
+
+main section.catalogue-and-pricing
+.catalogue .catalogue-table .side {
+  flex: 1;
+  margin: 5px;
+}
+
+main section.catalogue-and-pricing
+.catalogue .catalogue-table .side.left {
+  border-right: 1px solid white;
+  padding-right: 15px;
+}
+
+main section.catalogue-and-pricing
+.catalogue .catalogue-table .side .classe em {
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+/* 2. pricing */
+main section.catalogue-and-pricing .pricing {
+  flex: 1;
+}
+
+main section.catalogue-and-pricing .pricing .discount {
+  background: var(--secondary-color);
+  margin-top: 15px;
+  padding: 25px;
+  text-align: center;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+main section.catalogue-and-pricing .pricing .discount p {
+  margin-top: 20px;
+}
+
+main section.catalogue-and-pricing .pricing .discount button {
+  margin-top: 20px;
+  padding: 12px;
+  border-radius: 5px;
+  background: var(--secondary-color);
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+main section.catalogue-and-pricing .pricing .discount button:hover {
+  background: white;
+  color: var(--secondary-color);
+}
