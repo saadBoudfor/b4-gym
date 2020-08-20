@@ -1,49 +1,45 @@
-
 header {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
 section.presentation {
-  background: url("../resources/banner11.jpg");
-  min-height: 800px;
+  background: url("../resources/banner11.jpg") no-repeat;
   position: relative;
+  background-size: cover;
 }
 
 div.navigation {
-  position: absolute;
-  bottom: 60px;
-  left: 50%;
   cursor: pointer;
+  margin: auto;
+  width: 7.2rem;
 }
 
 div.navigation i:hover {
-  font-size: 82px;
+  color: var(--main-color);
 }
 
 div.navigation i {
-  font-size: 72px;
+  font-size: 7.2rem;
   color: white;
 }
 
 section.presentation div.description {
-  background-color:  var(--main-color-transparent);
-  color: white;
-  padding: 21px;
-  max-width: 450px;
-  min-width: 300px;
-  border-bottom: 5px solid var(--secondary-color);
-  margin-top: 20%;
+  background-color: var(--main-color-transparent);
+      color: white;
+      padding: 21px;
+      border-bottom: 5px solid var(--secondary-color);
+      margin-top: 20%;  margin-bottom: 10%;
+      width: fit-content; height: fit-content;
 }
 
 section.presentation div.description h1 {
-    font-size: 42px;
+    font-size: 4.2rem;
     font-weight: 400;
 }
 
 section.presentation div.description h2 {
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: 300;
     margin-top: 10px;
 }
@@ -104,6 +100,12 @@ section.menu {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
+}
+
+@media (max-width: 640px) {
+  section.menu nav {
+      display: none;
+  }
 }
 
 section.menu div.logo {

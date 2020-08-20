@@ -11,14 +11,28 @@ main section.gym-description {
   justify-content: center;
 }
 
+@media (max-width: 640px) {
+  main section.gym-description {
+    flex-direction: column;
+  }
+
+  main section.gym-description .description {
+    margin-top: 15px;
+  }
+}
+
 main section.gym-description .description {
   height: fit-content;
   text-align: center;
   max-width: 500px;
 }
 
+main section.gym-description .mascot img{
+  width: 100%;
+}
+
 main section.gym-description h1 {
-  font-size: 42px;
+  font-size: 4rem;
   font-weight: 100;
 }
 
@@ -36,6 +50,18 @@ main section.streaming {
 
 main section.streaming .card {
   margin: 5px;
+  width: 30%;
+}
+
+@media all and (max-width: 640px) {
+  main section.streaming {
+    flex-direction: column;
+  }
+
+  main section.streaming .card {
+    margin: 5px;
+    width: 100%;
+  }
 }
 
 main section.streaming .card .card-title {
@@ -48,13 +74,8 @@ main section.streaming .card .card-title {
 }
 
 main section.streaming .card .card-title span {
-  font-size: 1em;
   text-transform: uppercase;
   color: white;
-}
-
-main section.streaming .card .card-title span.room {
-  font-size: 0.8em;
 }
 
 main section.streaming .card .card-body {
@@ -66,6 +87,7 @@ main section.streaming .card .card-body {
 
 main section.streaming .card .card-body img {
   object-fit: cover;
+  width: 100%;
 }
 
 main section.streaming .card .card-body button {
@@ -73,7 +95,6 @@ main section.streaming .card .card-body button {
       border-radius: 5px;
       cursor: pointer;
       text-transform: uppercase;
-      font-size: 1em;
       font-weight: 300;
       height: fit-content;
       position: absolute;
@@ -106,14 +127,14 @@ main section.catalogue-and-pricing > * {
 }
 
 main section.catalogue-and-pricing h2 {
-  font-size: 28px;
+  font-size: 1.8rem;
   color: var(--main-color);
   text-transform: uppercase;
   font-weight: 100;
 }
 
 main section.catalogue-and-pricing .catalogue {
-  flex: 2;
+  width: 70%;
 }
 
 main section.catalogue-and-pricing .catalogue .catalogue-table{
@@ -155,7 +176,7 @@ main section.catalogue-and-pricing
 
 /* 2. pricing */
 main section.catalogue-and-pricing .pricing {
-  flex: 1;
+  width: 30%;
 }
 
 main section.catalogue-and-pricing .pricing .discount {
@@ -185,4 +206,30 @@ main section.catalogue-and-pricing .pricing .discount button {
 main section.catalogue-and-pricing .pricing .discount button:hover {
   background: white;
   color: var(--secondary-color);
+}
+
+
+@media (max-width: 640px) {
+  main section.catalogue-and-pricing {
+    flex-direction: column;
+  }
+
+  main section.catalogue-and-pricing .catalogue,
+  main section.catalogue-and-pricing .pricing {
+    width: 100%;
+  }
+
+  main section.catalogue-and-pricing .catalogue .catalogue-table {
+    flex-direction: column;
+  }
+
+  main section.catalogue-and-pricing .catalogue  .catalogue-table  .side {
+    margin: 0;
+  }
+
+  main section.catalogue-and-pricing .catalogue .catalogue-table .side.left {
+    border-right: none;
+    padding-right: 0;
+  }
+
 }
